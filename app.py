@@ -10,7 +10,6 @@ app = Flask(__name__)
 
 CORS(app) 
 
-port = 8080
 github_client_id = os.environ.get('GITHUB_CLIENT_ID')
 github_client_secret = os.environ.get('GITHUB_CLIENT_SECRET')
 
@@ -110,4 +109,4 @@ def parse_pom_xml(xml_content):
     return dependencies
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

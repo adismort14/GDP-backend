@@ -1,10 +1,8 @@
-FROM python:3.8-slim
+FROM python
 
 ENV FLASK_APP=app.py \
     FLASK_RUN_HOST=0.0.0.0 \
-    FLASK_RUN_PORT=8080 \
-    GITHUB_CLIENT_ID=<enter_your_client_id> \
-    GITHUB_CLIENT_SECRET=<enter_your_client_secret>
+    FLASK_RUN_PORT=5000 
 
 WORKDIR /app
 
@@ -14,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 5000
 
 CMD ["flask", "run"]
 
