@@ -1,6 +1,6 @@
 # GDP - backend
 
-This is the backend for the GDP - Github Dependency Parser Project built using Flask framework in Python. The backend has currently being hosted on Koyeb.
+This is the backend for the GDP - Github Dependency Parser Project built using Flask framework in Python. The backend has being hosted on Koyeb.
 
 ## Instructions
 
